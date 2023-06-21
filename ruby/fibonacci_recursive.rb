@@ -1,5 +1,10 @@
 def fibonacci(n)
   # type your code in here
+  if n < 2
+    return n
+  end
+
+  return fibonacci(n - 1) + fibonacci(n - 2);
 end
 
 if __FILE__ == $PROGRAM_NAME
